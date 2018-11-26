@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-.xop-container {
+.travel-a-container {
     display: flex;
 }
 
@@ -19,7 +19,7 @@ div {
     justify-content: center;
 }
 
-.xop-left {
+.travel-a-left {
     background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)),
         url(../images/city.jpg);
     background-size: cover;
@@ -29,7 +29,7 @@ div {
     transition: all .2s ease-in-out;
 }
 
-.xop-right {
+.travel-a-right {
     background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
         url(../images/country.jpg);
         background-size: cover;
@@ -39,21 +39,21 @@ div {
     transition: all .2s ease-in-out;
 }
 
-.xop-left:hover, .xop-right:hover {
+.travel-a-left:hover, .travel-a-right:hover {
     transform: scale(0.95);
 }
 
-.xop-left h1 {
+.travel-a-left h1 {
     font-family: 'Rock Salt', cursive;
     font-size: 6rem;
 }
 
-.xop-right h1 {
+.travel-a-right h1 {
     font-family: 'Pacifico', cursive;
     font-size: 6rem;
 }
 
-.xop-button {
+.travel-a-button {
     border-radius: 30px;
     color: #fff;
     background-color: #fcad26;
@@ -69,11 +69,123 @@ div {
     width: 150px;
 }
 
-.xop-button:hover {
+.travel-a-button:hover {
     background: #fcc567;
     color: #fff;
 }
 
+.city{
+   font-family: 'Rock Salt';
+   background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)),
+        url(../images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.country{
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+        url(../images/country.jpg);
+        background-size: cover;
+        background-position: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.travel-a-city-article{
+    font-family: 'Rock Salt', cursive;
+    font-size: 6rem;
+    font-size: 100%;
+    color: black;
+}
+
+.travel-a-country-article{
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+    font-size: 100%;
+    color: black;
+}
+
+.travel-a-heading-image{
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10));
+    height: 80%;
+    width: 98%;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+h1{
+   color: black;  
+}
+
+img{
+    height: 80%;
+    width: 70%;
+}
+
+ol{
+    text-align: left;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.buttonHolder{
+    text-align: center; 
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
 
 
 
